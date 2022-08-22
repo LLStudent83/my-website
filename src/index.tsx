@@ -5,7 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { store } from './store';
 import App from './components/app/App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+
+require('./index.module.css');
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -17,7 +18,7 @@ root.render(
         <App />
       </React.StrictMode>
     </Provider>
-    ,
+
   </BrowserRouter>,
 
 );

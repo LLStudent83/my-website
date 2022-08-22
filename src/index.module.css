@@ -1,0 +1,24 @@
+:root {
+  --background-color: #efd0aa;
+  background-color: var(--background-color);
+}
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-family: 'Chibola', serif;
+  font-size: calc(0.5em + 0.71vw);
+  font-weight: 400;
+  --color: #412a1e;
+  color: var(--color);
+}
+
+@font-face {
+  font-family: 'Chibola';
+  src: url(./fonts/Chibola.ttf);
+}
