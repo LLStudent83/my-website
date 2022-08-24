@@ -11,7 +11,7 @@ export default function Layout(): JSX.Element {
       <header className={styles.main_header}>
         <Header />
       </header>
-      <main>
+      <main className={styles.main_main}>
         <Outlet />
       </main>
       <footer className={styles.main_footer}>

@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import resumeReducer from './slices/resumeSlice';
 
 export const store = configureStore({
   reducer: {
+    resume: resumeReducer,
   },
-  middleware: [],
 });
 
 export type RootState = ReturnType<typeof store.getState>;

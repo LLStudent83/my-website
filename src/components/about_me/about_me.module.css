@@ -1,0 +1,87 @@
+.about_me {
+    display: flex;
+}
+
+.about_me__photo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-right: 1.5em;
+    border-right: 1px solid var(--color);
+    margin-right: 1em;
+}
+
+.about_me__photo__name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about_me__photo__prof {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+.about_me__photo__photo {
+    width: 100%;
+    border: 1px solid var(--color);
+    position: relative;
+    z-index: 1;
+}
+
+.wrapp {
+    width: 80%;
+    position: relative;
+}
+
+.wrapp::before,
+.wrapp::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../../img/floral-right-border-outline-variant-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    z-index: 0;
+}
+
+.wrapp::before {
+    bottom: 95%;
+    left: 93%;
+}   
+
+.wrapp::after {
+    transform: rotate(180deg);
+    right: 93%;
+    top: 95%;
+}
+
+.about_me__cont_end_skill {
+    padding-left: 1.5em;
+    border-left: 1px solid var(--color);
+
+}
+
+.about_me__contacts {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--color);
+}
+
+.about_me__contacts p {
+    font-size: 1.1rem;
+}
+
+.about_me__contacts p a{
+    text-decoration: none;
+}
+
+.about_me__skills h2 {
+font-size: 1.7rem;
+}
